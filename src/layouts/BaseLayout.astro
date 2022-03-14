@@ -1,0 +1,28 @@
+---
+import "../styles/global.css"
+import Navbar from '../components/Navbar.astro';
+const { title = 'Astro new page' } = Astro.props;
+
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<body>
+  <div class="wrapper">
+    <Navbar />
+	  <main>
+        <slot />
+	  </main>
+    <footer class="blur">
+      <small>Copyright © <span id="copyrightYear"></span> Desgn</small>
+    </footer>
+  </div>
+  <script>
+    document.querySelector('#copyrightYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
