@@ -154,7 +154,22 @@ small {
   gap: var(--size-fluid-3);
 }
 
-/* COMPNENTS */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.narrow {
+  max-width: 80ch;
+}
+
+/* COMPONENTS */
 .btn {
   color: hsl(var(--white));
   text-decoration: none;
@@ -279,6 +294,11 @@ li[role='none'],
   }
 }
 
+/* HERO */
+header {
+  text-align: center;
+}
+
 /* PROGRAMMER SECTION */
 .programmer::after,
 .programmer::before {
@@ -288,6 +308,20 @@ li[role='none'],
 .programmer-icon {
   width: var(--size-fluid-9);
   filter: drop-shadow(10px 10px 25px hsl(var(--accent2) / 0.2));
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: var(--size-fluid-3);
+}
+
+.service {
+  flex: 1 1 300px;
+  display: grid;
+  gap: var(--size-2);
 }
 
 /* FOOTER */
