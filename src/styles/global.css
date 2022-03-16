@@ -522,6 +522,22 @@ header {
   gap: var(--size-2);
 }
 
+/* CLIENTS */
+.clients-heading {
+  font-weight: normal;
+}
+
+.client-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 var(--size-fluid-3);
+}
+
+.client-logo {
+  flex: 0 1 var(--size-fluid-5);
+}
+
 /* FOOTER */
 footer {
   display: grid;

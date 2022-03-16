@@ -1,0 +1,14 @@
+---
+import { Icon } from 'astro-icon';
+import data from '../data/clients.json';
+---
+<section class="clients grid-sm">
+    <h2 class="h3 clients-heading"></h2>
+    <div class="client-logo-container">
+        {
+            data.map((item) => (
+                <Icon name={item.icon} height="85" class="client-logo text-muted" alt={item.alt} />
+            ))
+        }
+    </div>
+</section>
