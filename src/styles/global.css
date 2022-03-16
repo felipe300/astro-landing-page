@@ -538,6 +538,15 @@ header {
   flex: 0 1 var(--size-fluid-5);
 }
 
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.cta .narrow {
+  max-width: var(--size-content-3);
+}
+
 /* FOOTER */
 footer {
   display: grid;
